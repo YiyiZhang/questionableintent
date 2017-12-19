@@ -2544,11 +2544,6 @@
 
 		}
 
-	header p {
-		position: relative;
-		margin: 0 0 1.5em 0;
-	}
-
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
@@ -2564,10 +2559,6 @@
 	header h6 + p {
 		font-size: 0.9em;
 		margin-top: -0.6em;
-	}
-
-	header p {
-		color: #717171;
 	}
 
 /* Table */
@@ -3135,7 +3126,8 @@
 
 		#header .logo {
 			font-family: 'Calligraffitti', cursive;
-			display: inline-block;
+      display: flex;
+      align-items: flex-start;
 			vertical-align: center
 			height: inherit;
 			left: 0;
@@ -3151,9 +3143,19 @@
 			padding: 0;
 		}
 
-			#header .logo:hover {
-				color: rgba(229, 71, 75, 0.75);
-			}
+    #header img {
+      margin-top: 15px;
+      margin-right: 10px;
+    }
+
+    #header p {
+      margin-top: 6px;
+      color: #FFF;
+    }
+
+		#header .logo:hover {
+			color: rgba(229, 71, 75, 0.75);
+		}
 
 		#header a {
 			-moz-transition: color 0.2s ease-in-out;
